@@ -9,7 +9,8 @@ const getAnimeChar = (id) => {
     fetch(`${BASE_URL}/anime/${id}`)
     .then(response => response.json())
     .then(json => {
-        animageDiv.innerHTML = `<img src="${json.data.attributes.posterImage.small}" height=200 width=200/>`
+        const title = json.data.attributes.canonicalTitle
+        animageDiv.innerHTML = `<h2>${title}</h2><img src="${json.data.attributes.posterImage.small}" height=200 width=200/>`
     })
 }
 
