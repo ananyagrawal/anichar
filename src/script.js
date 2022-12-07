@@ -19,11 +19,11 @@ const getSearchAnime = (name) =>{
     .then(response => response.json())
     .then(json => {
         const anime = json.data[0];
-        animageDiv.innerHTML = `<img src="${anime.attributes.posterImage.small}" height=200 width=200/>`
+        const title = json.data[0].attributes.canonicalTitle
+        animageDiv.innerHTML = `<h2>${title}</h2><img src="${anime.attributes.posterImage.small}" height=200 width=200/>`
     })
 }
 
-// const id=Math.random()*100;
 const randomHero = () => {
     return Math.floor(Math.random() * 12500)
 }
