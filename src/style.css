@@ -10,7 +10,7 @@ html{
     flex-direction: column;
     align-items: center;
     gap: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .char-img{
     height: 200px;
