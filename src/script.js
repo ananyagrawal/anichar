@@ -25,7 +25,7 @@ const getSearchAnime = (name) =>{
 }
 
 const randomHero = () => {
-    return Math.floor(Math.random() * 12400)
+    return Math.floor(Math.random() * 12500)
 }
 
 newAniBtn.onclick = () => getAnimeChar(randomHero());
