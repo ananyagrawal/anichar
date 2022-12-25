@@ -2,10 +2,10 @@
     font-family: 'Mukta', sans-serif;
 }
 html{
-    background-color: rgb(51, 95, 227);
+    background-color: rgb(51, 95, 226);
 }
 .container{
-    background-color: rgb(51, 95, 227);
+    background-color: rgb(51, 95, 226);
     display: flex;
     flex-direction: column;
     align-items: center;
